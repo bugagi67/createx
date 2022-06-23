@@ -100,16 +100,63 @@ li {
   padding: 11px 16px;
   font-size: 14px;
   position: relative;
-}
-
-.search_png {
-  position: absolute;
-  z-index: 100;
-  right: 310px;
+  background-image: url(../img/serch.png);
+  background-repeat: no-repeat;
+  background-position: right 2% bottom 50%;
 }
 
 .nav_icon {
-    display: flex;
+  display: flex;
+}
+
+.love_product {
+  margin-right: 20px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  color: #424551;
+  align-self: center;
+  display: flex;
+}
+
+.love_product > img {
+  width: 19px;
+  height: 16px;
+}
+
+.basket_product {
+  margin-left: 20px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  color: #424551;
+  align-self: center;
+  display: flex;
+}
+
+.basket_product > img {
+  width: 30px;
+  height: 18px;
+}
+
+.wrapper_count_basket {
+  width: 23px;
+  height: 20px;
+  text-align: center;
+  position: relative;
+  border-radius: 5px;
+}
+
+.basket_product .active {
+  background-color: #03CEA4;
+  color: #fff;
+  font-size: 12px;
+}
+
+.wrapper_count_basket > span {
+  position: absolute;
+  bottom: -3px;
+  left: 7px;
 }
 
 .special_offers {
@@ -193,23 +240,44 @@ h1 {
   background-color: #17696A;
 }
 
+.slider_page {
+  display: flex;
+}
+
 .slider {
   text-decoration: none;
   color: #424551;
+  opacity: .6;
   font-size: 28px;
   font-weight: 700;
   position: relative;
-  margin-right: 150px;
+  display: block;
+  margin-right: 8px;
 }
 
-.slider::after {
+.slider_count_line > a span {
   content: "";
   width: 178px;
   height: 2px;
   background-color: #424551;
-  position: absolute;
-  left: 0;
-  top: 45px;
+  opacity: .6;
+  display: block;
+}
+
+.slider_page > .active .slider {
+  opacity: 1;
+}
+
+.slider_page > .active a span {
+  opacity: 1;
+}
+
+.slider_count_line:hover .slider {
+  opacity: 1;
+}
+
+.slider_count_line:hover span {
+  opacity: 1;
 }
 
 .top_categories {
@@ -346,6 +414,10 @@ a .categories  {
   height: 3px;
   background-color: #B3B7BC;
   margin-right: 10px;
+}
+
+.group_slide_line span:hover {
+  background-color: #828591;
 }
 
 .group_slide_line > span.active {
@@ -1025,6 +1097,10 @@ footer {
   line-height: 160%;
 }
 
+.help li a:hover {
+  color: #ecebeb;
+}
+
 .check_form_subscribe {
   margin-right: 15px;
 }
@@ -1064,3 +1140,4 @@ footer {
 .link_to_go {
   color: rgb(184, 181, 181);
 }
+
