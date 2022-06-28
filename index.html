@@ -10,12 +10,13 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
+  <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js"></script>
 </head>
 
 <body>
   <header>
     <nav>
-      <div class="top">
+      <div class="top" id="top">
         <div class="container">
           <ul class="top_bar">
             <li>Available 24/7 at
@@ -157,17 +158,17 @@
             </a>
           </label>
           <label class="slider_count_line" for="">
-            <a href="#0" class="slider">02
+            <a href="#new_arrivals" class="slider">02
               <span></span>
             </a>
           </label>
           <label class="slider_count_line" for="">
-            <a href="#0" class="slider">03
+            <a href="#trending" class="slider">03
               <span></span>
             </a>
           </label>
           <label class="slider_count_line" for="">
-            <a href="#0" class="slider">04
+            <a href="#social_instagram" class="slider">04
               <span></span>
             </a>
           </label>
@@ -198,7 +199,7 @@
         </figure>
       </div>
     </div>
-    <div class="new_arrivals">
+    <div class="new_arrivals" id="new_arrivals">
       <h2 class="title">New arrivals</h2>
       <p class="new_arrivals_subtitle">Check out our latest arrivals for the upcoming season<br>
         <a href="#0" class="link_subtitle">See the collection here</a>
@@ -425,7 +426,7 @@
         </div>
       </div>
     </section>
-    <section class="trending">
+    <section class="trending" id="trending">
       <div class="container">
         <div class="navigate">
           <h2 class="title title_trending">Trending now</h2>
@@ -439,7 +440,7 @@
           </div>
         </div>
         <div class="trending_card">
-          <div class="product_card">
+          <div class="product_card trending_product_card">
             <a href="#0">
               <img src="img/trending/image1.png" alt="кепка">
               <div class="content_card">
@@ -448,7 +449,7 @@
               </div>
             </a>
           </div>
-          <div class="product_card">
+          <div class="product_card trending_product_card">
             <a href="#0">
               <img src="img/trending/image2.png" alt="кепка">
               <div class="content_card">
@@ -457,7 +458,7 @@
               </div>
             </a>
           </div>
-          <div class="product_card">
+          <div class="product_card trending_product_card">
             <a href="#0">
               <img src="img/trending/image3.png" alt="кепка">
               <div class="content_card">
@@ -486,7 +487,7 @@
           </div>
         </div>
         <div class="trending_card">
-          <div class="product_card">
+          <div class="product_card trending_product_card">
             <a href="#0">
               <img src="img/sale_up_to/leather bag.png" alt="кепка">
             </a>
@@ -520,7 +521,7 @@
               </div>
             </div>           
           </div>
-          <div class="product_card">
+          <div class="product_card trending_product_card">
             <a href="#0">
               <img src="img/sale_up_to/skinny jeans.png" alt="кепка">
             </a>
@@ -554,7 +555,7 @@
               </div>
             </div>           
           </div>
-          <div class="product_card">
+          <div class="product_card trending_product_card">
             <a href="#0">
               <img src="img/sale_up_to/boots.png" alt="кепка">
             </a>
@@ -647,7 +648,7 @@
         </div>
       </div>
     </section>
-    <section class="social_instagram">
+    <section class="social_instagram" id="social_instagram">
       <div class="container">
         <div class="instagram">
           <div class="follow_instagram">
@@ -820,11 +821,140 @@
       <div class="container">
         <div class="coop">
           <p class="coop_company">© All rights reserved. Made with <img src="img/Vector (Stroke).png" alt=""> by Createx Studio</p>
-          <p class="link_to_go">Go to top</p>
+          <p class="link_to_go"><a href="#top">Go to top</a></p>
         </div>
       </div>    
     </section>
   </footer>
+
+    <!-- POP UP SIGN_IN START -->
+
+  <div class="pop_up_sign_in_hidden">
+    <div class="pop_up_overlay_sign_in">
+      <div class="pop_up_sign_in">
+        <button class="pop_up_close" type="button"></button>
+        <h3 class="pop_up_sign_in_title">Sign in</h3>
+        <p class="pop_up_sign_in_subtitle">
+          Sign in to your account using email and password provided during registration.
+        </p>
+        <form action="#">
+          <div class="pop_up_sign_in_email">
+            <label for="">
+              <span>Email</span>
+              <input class="pop_up_sign_input" type="email" placeholder="Your working email">
+            </label>
+          </div>
+          <div class="pop_up_sign_in_password">
+            <label for="">
+              <span>Password</span>
+              <input type="password" class="pop_up_sign_input">
+            </label>
+          </div>
+          <div class="pop_up_sign_in_checkbox">
+            <label for="">
+              <input type="checkbox">
+              <span class="restore_pasword">Keep me signed in</span>
+            </label>
+            <a href="#">Forgot password?</a>
+          </div>
+          <button type="submit" class="pop_up_sign_in_button">Sign in</button>
+          <span class="pop_up_sign_in_link_sign_up">Don't have an account? <a href="#">Sign up</a></span>
+          <hr>
+          <span class="pop_up_sign_in_social">Or sign in with</span>
+          <div class="pop_up_sign_in_social_icon">
+            <a class="social_item" href="#" target="_blank">
+              <i class="fab fa-facebook-f"></i>
+            </a>	
+            <a class="social_item" href="#" target="_blank">
+              <i class="fab fa-twitter"></i>
+            </a>	
+            <a class="social_item" href="#" target="_blank">
+              <i class="fab fa-pinterest-p"></i>
+            </a>	
+            <a class="social_item" href="#" target="_blank">
+              <i class="fab fa-instagram"></i>
+            </a>		
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>  
+      
+      <!-- POP UP SIGN_IN END -->  
+
+      <!-- POP UP SIGN_UP START -->
+
+  <div class="pop_up_sign_up_hidden">
+    <div class="pop_up_overlay_sign_up">
+      <div class="pop_up_sign_up">
+        <button class="pop_up_close" type="button"></button>
+        <h3 class="pop_up_sign_up_title">Sign up</h3>
+        <p class="pop_up_sign_up_subtitle">
+          Registration takes less than a minute but gives you full control over your orders.
+        </p>
+        <form action="#">
+          <div class="pop_up_sign_up_email">
+            <label for="">
+              <span>Full Name</span>
+              <input class="pop_up_sign_input" type="text" placeholder="Your full name">
+            </label>
+          </div>
+          <div class="pop_up_sign_up_email">
+            <label for="">
+              <span>Email</span>
+              <input class="pop_up_sign_input" type="email" placeholder="Your working email">
+            </label>
+          </div>
+          <div class="pop_up_sign_up_password">
+            <label for="">
+              <span>Password</span>
+              <input type="password" class="pop_up_sign_input">
+            </label>
+          </div>
+          <div class="pop_up_sign_up_password">
+            <label for="">
+              <span>Confirm Password</span>
+              <input type="password" class="pop_up_sign_input">
+            </label>
+          </div>
+          <div class="pop_up_sign_up_checkbox">
+            <label for="">
+              <input type="checkbox">
+              <span class="restore_pasword">Remember me</span>
+            </label>
+          </div>
+          <button type="submit" class="pop_up_sign_up_button">Sign up</button>
+          <span class="pop_up_sign_up_link_sign_up">Already have an account? <a href="#">Sign in</a></span>
+          <hr>
+          <span class="pop_up_sign_up_social">Or sign in with</span>
+          <div class="pop_up_sign_up_social_icon">
+            <a class="social_item" href="#" target="_blank">
+              <i class="fab fa-facebook-f"></i>
+            </a>	
+            <a class="social_item" href="#" target="_blank">
+              <i class="fab fa-twitter"></i>
+            </a>	
+            <a class="social_item" href="#" target="_blank">
+              <i class="fab fa-pinterest-p"></i>
+            </a>	
+            <a class="social_item" href="#" target="_blank">
+              <i class="fab fa-instagram"></i>
+            </a>		
+          </div>
+        </form>
+      </div>
+
+      <!-- POP UP SIGN_UP END -->
+
+    </div>
+  </div>
+
+
+
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="js/script.js"></script>
+  
 </body>
 
 </html>
